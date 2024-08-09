@@ -1,9 +1,9 @@
 export default function Home() {
     return (
       <div>
-     <h1>home</h1>
+        <h1>About Me</h1>
         <p>
-          Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
+        inibus est at efficitur. Praesent sed congue diam.
           Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
           mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
           lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
@@ -13,5 +13,4 @@ export default function Home() {
       </div>
     );
   }
-
   

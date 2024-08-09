@@ -11,3 +11,10 @@ html {
 .vertical-spacing {
   margin-bottom: 2rem; /* Adjust this value as needed */
 }
+
+.project-image {
+  width: 100%; /* Ensures the image takes up the full width of the card */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image is scaled to cover the entire area */
+  border-radius: 5px; /* Optional: add a bit of border-radius for a nicer look */
+}

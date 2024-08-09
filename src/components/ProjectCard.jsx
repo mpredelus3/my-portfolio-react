@@ -9,7 +9,7 @@ function ProjectCard({ title, description, image, url }) {
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} alt={title} />  {/* Using the image */}
       <Card.Body>
-        <Card.Title>Horiseon Project</Card.Title>
+        <Card.Title>{title}</Card.Title>
         <Card.Text>
           {description} 
         </Card.Text>

@@ -1,6 +1,6 @@
 import horiseonImg from "../assets/images/horiseon.jpg"
 import comingSoon from "../assets/images/comingSoon.jpg"
-
+import NestCast from "../assets/images/NestCast.png"
 const projects = [
   {
     title: 'Horiseon Project',
@@ -9,10 +9,10 @@ const projects = [
     url: 'https://mpredelus3.github.io/horiseon01/'
   },
   {
-    title: '2',
-    description: 'Another awesome project',
-    image: comingSoon,
-    url: 'https://your-second-deployed-site-url.com'
+    title: 'Nest-Cast',
+    description: 'Weather and national parks, all-in-one.',
+    image: NestCast,
+    url: 'https://mpredelus3.github.io/nest-cast/home.html'
   },
   {
     title: '3',

@@ -8,7 +8,7 @@ function HeaderNav() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="/">Mack Predelus</Navbar.Brand>
+          <Navbar.Brand href="/about">Mack Predelus</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} smooth to="/about">About Me</Nav.Link>
             <Nav.Link as={Link} smooth to="/portfolio">Portfolio</Nav.Link>
