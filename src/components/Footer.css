@@ -1,0 +1,29 @@
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Padding for top and bottom */
+    width: 100%; /* Full width */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-bottom: 10px; /* Space between icons and text */
+  }
+  
+  .footer-content a {
+    color: white; /* White icons */
+    font-size: 1.5rem; /* Size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .footer-content a:hover {
+    color: #5836AF; /* Hover color */
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  

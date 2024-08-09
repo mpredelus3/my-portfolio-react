@@ -37,10 +37,21 @@ html {
 
 /* Ensure the body and root div cover the full height of the viewport */
 body, html, #root {
-  height: 100%;
+  min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
+
+#root {
+  flex: 1; /* Allow the content to grow and push the footer to the bottom */
+}
+
+.footer {
+  margin-top: auto; /* Push the footer to the bottom of the content */
+}
+
 
 /* Light Mode */
 .light-mode {

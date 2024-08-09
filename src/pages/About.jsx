@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import myPhoto from '../assets/images/photo-of-me.jpg';
-import './About.css'; // Assuming About.css is in the same directory as About.jsx
+import '../components/About.css'; // Assuming About.css is in the same directory as About.jsx
 
 function About() {
   return (

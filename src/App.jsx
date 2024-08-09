@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import About from './pages/About';
+import Footer from './components/Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -26,6 +27,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
