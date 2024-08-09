@@ -1,18 +1,28 @@
-export default function Portfolio() {
-    return (
-        <div>
-            Co
-        <h1>My projects</h1>
-        <p>
-          pharetra finibus est at efficitur. Praesent sed congue diam.
-          Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-          mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-          lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-          imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-          in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-        </p>
-      </div>
-    );
-  }
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import projects from '../data/projects'; 
+import ProjectCard from '../components/ProjectCard';
 
+function Portfolio() {
+  return (
+    <Container>
+      <h1>My Projects</h1>
+      <Row>
+        {projects.map((project, index) => (
+          <Col key={index} sm={12} md={6} lg={4} className="mb-4">
+            <ProjectCard 
+              title={project.title} 
+              description={project.description} 
+              image={project.image} 
+              url={project.url} 
+            />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
+}
 
+export default Portfolio;
