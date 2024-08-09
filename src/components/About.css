@@ -1,0 +1,33 @@
+.about-box {
+    background-color: rgba(128, 128, 128, 0.8); /* Gray color with 80% opacity */
+    padding: 20px; /* Adds space inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: white; /* Ensure text is visible against the gray background */
+  }
+  
+  .about-container {
+    padding: 20px;
+    margin-top: 40px; /* Adds some space at the top */
+  }
+  
+  .about-photo {
+    max-width: 200px; /* Ensure the photo is not too large */
+    border: 5px solid #ffffff; /* Optional: white border around the photo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the photo */
+  }
+  
+  .about-box {
+    background-color: rgba(128, 128, 128, 0.8); /* Gray color with 80% opacity */
+    padding: 20px; /* Adds space inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: white; /* Ensure text is visible against the gray background */
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    line-height: 1.6; /* Improve readability with line height */
+  }
+  
+  .about-box p {
+    margin-bottom: 1rem; /* Adds some space between paragraphs */
+  }
+  
