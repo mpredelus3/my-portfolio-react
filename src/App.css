@@ -12,9 +12,50 @@ html {
   margin-bottom: 2rem; /* Adjust this value as needed */
 }
 
-.project-image {
-  width: 100%; /* Ensures the image takes up the full width of the card */
-  height: 200px; /* Set a fixed height */
-  object-fit: cover; /* Ensures the image is scaled to cover the entire area */
-  border-radius: 5px; /* Optional: add a bit of border-radius for a nicer look */
+.project-button {
+  border: 2px solid transparent; /* Initial border */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition for the glow */
+}
+
+.project-button:hover {
+  border-color: #007bff; /* Optional: Change the border color on hover */
+  box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff; /* Glowing effect */
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent; /* Initial border */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly */
+  box-shadow: 0 0 15px #5836AF, 0 0 30px #5836AF, 0 0 45px #5836AF; /* Glow effect */
+  border-color: #5836AF; /* Border color matches the glow */
+}
+
+
+/* Light Mode (default) */
+body, .light-mode {
+  background-color: white; /* Background color for light mode */
+  color: black; /* Text color for light mode */
+}
+
+/* Dark Mode with Galaxy Background */
+.dark-mode {
+  background-color: #121212; /* Fallback background color */
+  background-image: url('../src/assets/images/galaxy.jpg'); /* Path to your galaxy image */
+  background-size: cover; /* Ensure the background covers the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: white; /* Text color for dark mode */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #343a40 !important; /* Fixed dark color for navbar */
+}
+
+.navbar .nav-link {
+  color: white !important; /* Fixed white color for navbar links */
 }
