@@ -8,7 +8,7 @@ body, html {
 
 /* Light mode styles */
 .light-mode {
-  background-image: url('../src/assets/images/sun.jpg'); /* Path to your light mode background */
+  background-image: url('../src/assets/images/sun.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body, html {
 
 /* Dark mode styles */
 .dark-mode {
-  background-image: url('../src/assets/images/galaxy.jpg'); /* Path to your dark mode background */
+  background-image: url('../src/assets/images/galaxy.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,22 +26,58 @@ body, html {
   color: white;
 }
 
-/* Theme toggle button styles */
+/* Theme toggle styles */
 .theme-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.toggle-button {
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
   cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+  outline: none;
+  border: none;
 }
 
-.toggle-button:focus {
-  outline: none;
+.theme-toggle:hover {
+  text-shadow: 0 0 10px #5836AF;
+  transform: scale(1.1);
+}
+
+/* Navbar link styles */
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffd700;
+  text-shadow: 0 0 10px #5836AF;
+  transform: scale(1.05);
+}
+
+/* Project Card Styles */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* Optional: add a slight border radius */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Pop out effect */
+  box-shadow: 0 0 15px #5836AF; /* Purple glow around the card */
+}
+
+/* View Project Button Styles */
+.project-button {
+  background-color: #5836AF;
+  color: white;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.project-button:hover {
+  background-color: #3e268c; /* Darker purple on hover */
+  box-shadow: 0 0 10px #5836AF; /* Purple glow around the button */
 }
 
 /* Flexbox container to manage layout */
@@ -58,7 +94,7 @@ main {
 
 /* Footer styles */
 .footer {
-  position: fixed; /* Changed from relative to fixed */
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -66,8 +102,8 @@ main {
   color: white;
   text-align: center;
   padding: 10px 0;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
-  z-index: 1000; /* Ensures it stays on top of other content */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 .footer-content {
@@ -86,43 +122,24 @@ main {
 }
 
 .footer-links a:hover {
-  color: #ffd700; /* Gold color on hover */
+  color: #ffd700;
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .footer-links {
-    margin-top: 10px;
-  }
-}
-
-/* Update for wider Contact and Proficiencies boxes */
+/* Contact form and proficiency box */
 .about-box, .proficiencies-box, .contact-box, .resume-box {
-  background-color: rgba(128, 128, 128, 0.8); /* Semi-transparent gray background */
+  background-color: rgba(128, 128, 128, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 1600px; /* Double the original width */
-  margin: 20px auto; /* Centers the box */
+  width: 800px;
+  max-width: 100%;
+  margin: 20px auto;
 }
 
 /* General heading styling */
 h1, h2 {
   text-align: center;
   margin-bottom: 20px;
-}
-
-/* Link styling */
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffd700; /* Gold color on hover */
 }
 
 /* Button styling */
