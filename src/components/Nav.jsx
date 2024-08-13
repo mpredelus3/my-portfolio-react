@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { HashLink as Link } from 'react-router-hash-link';
-import './Nav.css';
+import ThemeToggle from './ThemeToggle'; // Import the ThemeToggle component
 
-function HeaderNav({ toggleDarkMode, darkMode }) {
+function HeaderNav() {
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -17,10 +17,7 @@ function HeaderNav({ toggleDarkMode, darkMode }) {
             <Nav.Link as={Link} smooth to="/contact">Contact</Nav.Link>
             <Nav.Link as={Link} smooth to="/resume">Resume</Nav.Link>
           </Nav>
-          {/* Emoji Toggle */}
-          <div className="theme-toggle" onClick={toggleDarkMode}>
-            {darkMode ? '🌙' : '☀️'}
-          </div>
+          <ThemeToggle /> {/* Add ThemeToggle here */}
         </Container>
       </Navbar>
     </>

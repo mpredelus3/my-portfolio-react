@@ -1,99 +1,140 @@
-html {
-  scroll-behavior: smooth;
-}
-
-.centered-heading {
-  text-align: center;
-  margin-bottom: 2rem; /* Optional: adds some space below the heading */
-}
-
-
-.vertical-spacing {
-  margin-bottom: 2rem; /* Adjust this value as needed */
-}
-
-.project-button {
-  border: 2px solid transparent; /* Initial border */
-  transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition for the glow */
-}
-
-.project-button:hover {
-  border-color: #007bff; /* Optional: Change the border color on hover */
-  box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff; /* Glowing effect */
-}
-
-.project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid transparent; /* Initial border */
-  border-radius: 10px; /* Optional: rounded corners */
-}
-
-.project-card:hover {
-  transform: translateY(-10px); /* Moves the card up slightly */
-  box-shadow: 0 0 15px #5836AF, 0 0 30px #5836AF, 0 0 45px #5836AF; /* Glow effect */
-  border-color: #5836AF; /* Border color matches the glow */
-}
-
-
-/* Ensure the body and root div cover the full height of the viewport */
-body, html, #root {
-  min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
-  display: flex;
-  flex-direction: column;
+/* Global styles */
+body, html {
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-#root {
-  flex: 1; /* Allow the content to grow and push the footer to the bottom */
-}
-
-.footer {
-  margin-top: auto; /* Push the footer to the bottom of the content */
-}
-
-
-/* Light Mode */
+/* Light mode styles */
 .light-mode {
-  min-height: 100vh; /* Ensure it covers the full viewport height */
-  background-color: white; /* Fallback background color */
-  background-image: url('../src/assets/images/sun.jpg'); /* Path to sun image */
-  background-size: cover; /* Ensure the background covers the entire page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  color: black; /* Text color for light mode */
+  background-image: url('../src/assets/images/sun.jpg'); /* Path to your light mode background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
 }
 
-/* Dark Mode */
+/* Dark mode styles */
 .dark-mode {
-  min-height: 100vh; /* Ensure it covers the full viewport height */
-  background-color: #121212; /* Fallback background color */
-  background-image: url('../src/assets/images/galaxy.jpg'); /* Path to galaxy image */
-  background-size: cover; /* Ensure the background covers the entire page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  color: white; /* Text color for dark mode */
+  background-image: url('../src/assets/images/galaxy.jpg'); /* Path to your dark mode background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
 }
 
-
-/* Navbar Styles */
-.navbar {
-  background-color: #343a40 !important; /* Fixed dark color for navbar */
+/* Theme toggle button styles */
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.navbar .nav-link {
-  color: white !important; /* Fixed white color for navbar links */
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.navbar-nav .nav-link {
-  transition: text-shadow 0.3s ease;
+.toggle-button:focus {
+  outline: none;
 }
 
-.navbar-nav .nav-link:hover {
-  text-shadow: 0 0 5px #5836AF, 0 0 10px #5836AF, 0 0 15px #5836AF; /* Glow effect */
+/* Flexbox container to manage layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.navbar-brand {
-  /* Ensure Mack Predelus title doesn't have the glow */
-  text-shadow: none !important;
+/* Main content area that grows to fill space */
+main {
+  flex: 1;
+}
+
+/* Footer styles */
+.footer {
+  position: fixed; /* Changed from relative to fixed */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+  z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+}
+
+/* Update for wider Contact and Proficiencies boxes */
+.about-box, .proficiencies-box, .contact-box, .resume-box {
+  background-color: rgba(128, 128, 128, 0.8); /* Semi-transparent gray background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1600px; /* Double the original width */
+  margin: 20px auto; /* Centers the box */
+}
+
+/* General heading styling */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Link styling */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Button styling */
+button {
+  background-color: #5836AF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e268c;
 }
