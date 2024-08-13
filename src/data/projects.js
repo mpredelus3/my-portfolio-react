@@ -1,6 +1,9 @@
 import horiseonImg from "../assets/images/horiseon.jpg"
 import comingSoon from "../assets/images/comingSoon.jpg"
 import NestCast from "../assets/images/NestCast.png"
+import TP from "../assets/images/tp-logo.png"
+import taskBoard from "../assets/images/task-board.png"
+
 const projects = [
   {
     title: 'Horiseon Project',
@@ -15,16 +18,16 @@ const projects = [
     url: 'https://mpredelus3.github.io/nest-cast/home.html'
   },
   {
-    title: '3',
-    description: 'Yet another project',
-    image: comingSoon,
-    url: 'https://your-third-deployed-site-url.com'
+    title: 'Mental Health Adventure',
+    description: "Trash Panda is resources for mental health that encourages outside activity.",
+    image: TP,
+    url: 'https://mental-health-adventure.onrender.com/'
   },
   {
-    title: '4',
-    description: 'Yet another project',
-    image: comingSoon,
-    url: 'https://your-third-deployed-site-url.com'
+    title: 'Task Board',
+    description: 'A basic todo list for organization',
+    image: taskBoard,
+    url: 'https://mpredelus3.github.io/task-board/'
   },
   {
     title: '5',

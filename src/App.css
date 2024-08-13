@@ -43,6 +43,30 @@ body, html {
   transform: scale(1.1);
 }
 
+/* Toggle container to align the text and toggle switch */
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Surprise text styles */
+.surprise-text {
+  color: gold;
+  margin-right: 10px;
+  font-weight: bold;
+  animation: fadeInOut 2s infinite; /* Looping animation */
+}
+
+/* Keyframes for the fade effect */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1; /* Full opacity */
+  }
+  50% {
+    opacity: 0; /* Transparent */
+  }
+}
+
 /* Navbar link styles */
 .navbar .navbar-nav .nav-link {
   color: #fff;

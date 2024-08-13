@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { HashLink as Link } from 'react-router-hash-link';
-import ThemeToggle from './ThemeToggle'; // Import the ThemeToggle component
+import ThemeToggle from './ThemeToggle'; // Assuming you have a separate component for the toggle
 
 function HeaderNav() {
   return (
@@ -17,7 +17,12 @@ function HeaderNav() {
             <Nav.Link as={Link} smooth to="/contact">Contact</Nav.Link>
             <Nav.Link as={Link} smooth to="/resume">Resume</Nav.Link>
           </Nav>
-          <ThemeToggle /> {/* Add ThemeToggle here */}
+          <div className="toggle-container">
+            <span className="surprise-text">
+              Click here for a surprise 👉
+            </span>
+            <ThemeToggle /> {/* Your theme toggle switch */}
+          </div>
         </Container>
       </Navbar>
     </>
