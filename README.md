@@ -20,15 +20,18 @@ A web application that provides weather updates and locates national parks in th
 ### 2. [Horiseon Project](https://mpredelus3.github.io/horiseon01/)
 My very first project that laid the foundation for my journey into web development.
 
-### 3. Social Network API (NoSQL)
-An API for a social network web application, built using MongoDB, Mongoose, and Express, showcasing my proficiency in NoSQL databases.
+### 3. [Mental Health Adventure](https://mental-health-adventure.onrender.com/)
+A mobile-friendly app built with React, designed to encourage individuals with social anxiety to engage in social activities and explore new environments. This project highlights my ability to work in a team, contributing to a user-focused, responsive application.
+
+### 4. [Task List Project](https://mpredelus3.github.io/task-board/)
+A simple and efficient to-do list application that allows users to manage their daily tasks. This project showcases my ability to create functional, easy-to-use applications with React and demonstrates proficiency in managing state and user interactions.
 
 ## Contact Me
 
 If you have a project in mind or want to collaborate, feel free to reach out to me!
 
 - **Email**: [mpredelus3@gmail.com](mailto:mpredelus3@gmail.com)
-- **LinkedIn**: [linkedin.com/in/mack-predelus](www.linkedin.com/in/mack-predelus-1aaa83156)
+- **LinkedIn**: [linkedin.com/in/mack-predelus](https://www.linkedin.com/in/mack-predelus-1aaa83156)
 - **GitHub**: [github.com/mpredelus3](https://github.com/mpredelus3)
 - **Fiverr**: [fiverr.com/yourfiverrusername](https://www.fiverr.com/yourfiverrusername)
 
