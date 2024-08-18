@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import '../components/Contact.css'; // Custom CSS for styling the form
 
 function Contact() {
@@ -69,34 +70,24 @@ function Contact() {
       return;
     }
 
-    // Netlify form handling
-    const form = e.target;
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(form)).toString()
-    })
-    .then(() => alert('Your message has been sent successfully!'))
-    .catch((error) => alert('There was an issue sending your message. Please try again later.'));
-
-    // Reset form after submission
-    setFormData({ name: '', email: '', message: '' });
+    // Send the form data via EmailJS
+    emailjs.send(
+      'service_aja4zld',
+      'template_oxwqkqb',
+      formData,
+      'WJtKeynWEObp98YDi'
+    ).then((result) => {
+      alert('Your message has been sent successfully!');
+      setFormData({ name: '', email: '', message: '' });  // Reset form after submission
+    }).catch((error) => {
+      alert('There was an issue sending your message. Please try again later.');
+    });
   };
 
   return (
     <div className="contact-container">
       <h1 className="text-center mb-4">Contact Me</h1>
-      <form 
-        className="contact-form" 
-        onSubmit={handleSubmit} 
-        name="contact" 
-        method="POST" 
-        data-netlify="true" 
-        netlify-honeypot="bot-field"
-      >
-        {/* Hidden field for bot protection */}
-        <input type="hidden" name="form-name" value="contact" />
-
+      <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input 
@@ -143,4 +134,3 @@ function Contact() {
 }
 
 export default Contact;
-// code //
