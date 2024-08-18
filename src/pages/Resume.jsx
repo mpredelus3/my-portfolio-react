@@ -1,5 +1,6 @@
 import React from 'react';
 import '../components/Resume.css'; // Custom CSS for styling
+import '../assets/Documents/Mack-Predelus.pdf'
 
 function Resume() {
   return (
@@ -7,7 +8,7 @@ function Resume() {
       <h1 className="text-center mb-4">Resume</h1>
       
       <div className="resume-download">
-        <a href="path/to/your/resume.pdf" download="Mack_Predelus_Resume.pdf" className="download-link">
+        <a href="" download="Mack-Predelus-Resume.pdf" className="download-link">
           Download My Resume
         </a>
       </div>
