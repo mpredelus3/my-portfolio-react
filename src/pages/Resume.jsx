@@ -27,6 +27,7 @@ function Resume() {
           <li>Responsive Design</li>
           <li>SQL</li>
           <li>Web APIs</li>
+          <li>Playwright</li>
         </ul>
       </div>
     </div>
