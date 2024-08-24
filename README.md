@@ -26,6 +26,9 @@ A mobile-friendly app built with React, designed to encourage individuals with s
 ### 4. [Task List Project](https://mpredelus3.github.io/task-board/)
 A simple and efficient to-do list application that allows users to manage their daily tasks. This project showcases my ability to create functional, easy-to-use applications with React and demonstrates proficiency in managing state and user interactions.
 
+### 5. [Crith Croth](https://crithcroth.netlify.app/)
+A fun and mobile-friendly game of tic-tac-toe. The name stems from saying criss cross but with a lisp! :D
+
 ## Contact Me
 
 If you have a project in mind or want to collaborate, feel free to reach out to me!

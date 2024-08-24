@@ -3,13 +3,14 @@ import comingSoon from "../assets/images/comingSoon.jpg"
 import NestCast from "../assets/images/NestCast.png"
 import TP from "../assets/images/tp-logo.png"
 import taskBoard from "../assets/images/task-board.png"
+import crithCroth from "../assets/images/crithcroth.png"
 
 const projects = [
   {
-    title: 'Horiseon Project',
-    description: 'My very first project',
-    image: horiseonImg,
-    url: 'https://mpredelus3.github.io/horiseon01/'
+    title: 'Crith Croth',
+    description: 'mobile friendly Tic-Tac-Toe game made with React',
+    image: crithCroth,
+    url: 'https://crithcroth.netlify.app'
   },
   {
     title: 'Nest-Cast',
@@ -30,10 +31,10 @@ const projects = [
     url: 'https://mpredelus3.github.io/task-board/'
   },
   {
-    title: '5',
-    description: 'Yet another project',
-    image: comingSoon,
-    url: 'https://your-third-deployed-site-url.com'
+    title: 'Horiseon Project',
+    description: 'My very first project',
+    image: horiseonImg,
+    url: 'https://mpredelus3.github.io/horiseon01/'
   },
   {
     title: '6',
