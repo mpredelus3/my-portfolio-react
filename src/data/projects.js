@@ -4,6 +4,8 @@ import NestCast from "../assets/images/NestCast.png"
 import TP from "../assets/images/tp-logo.png"
 import taskBoard from "../assets/images/task-board.png"
 import crithCroth from "../assets/images/crithcroth.png"
+import ember from "../assets/images/logo-original-200.png"
+import QRcode from "../assets/images/qr-code-pic.jpg"
 
 const projects = [
   {
@@ -26,21 +28,21 @@ const projects = [
   },
   {
     title: 'Task Board',
-    description: 'A basic todo list for organization',
+    description: 'A basic Javascript made todo list for organization',
     image: taskBoard,
     url: 'https://mpredelus3.github.io/task-board/'
   },
   {
-    title: 'Horiseon Project',
-    description: 'My very first project',
-    image: horiseonImg,
-    url: 'https://mpredelus3.github.io/horiseon01/'
+    title: 'QR Code Generator',
+    description: 'A QR code generator built using React with Vite and MS SQL Server',
+    image: QRcode,
+    url: 'https://github.com/mpredelus3/qr-codeGen'
   },
   {
-    title: '6',
-    description: 'Yet another project',
-    image: comingSoon,
-    url: 'https://your-third-deployed-site-url.com'
+    title: 'Ember Mock-Up',
+    description: 'A client-requested mock-up of a multi-step customer signup page',
+    image: ember,
+    url: 'https://mpredelus3.github.io/checkout-page/'
   },
   // Add more projects as needed
 ];
