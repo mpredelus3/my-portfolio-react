@@ -9,6 +9,19 @@ import QRcode from "../assets/images/qr-code-pic.jpg"
 
 const projects = [
   {
+    title: 'Ember Mock-Up',
+    description: 'A client-requested mock-up of a multi-step customer signup page',
+    image: ember,
+    url: 'https://mpredelus3.github.io/checkout-page/'
+  },
+  {
+    title: 'QR Code Generator',
+    description: 'A QR code generator built using React with Vite and MS SQL Server',
+    image: QRcode,
+    url: 'https://github.com/mpredelus3/qr-codeGen'
+  },
+  // Add more projects as needed
+  {
     title: 'Crith Croth',
     description: 'mobile friendly Tic-Tac-Toe game made with React',
     image: crithCroth,
@@ -32,19 +45,6 @@ const projects = [
     image: taskBoard,
     url: 'https://mpredelus3.github.io/task-board/'
   },
-  {
-    title: 'QR Code Generator',
-    description: 'A QR code generator built using React with Vite and MS SQL Server',
-    image: QRcode,
-    url: 'https://github.com/mpredelus3/qr-codeGen'
-  },
-  {
-    title: 'Ember Mock-Up',
-    description: 'A client-requested mock-up of a multi-step customer signup page',
-    image: ember,
-    url: 'https://mpredelus3.github.io/checkout-page/'
-  },
-  // Add more projects as needed
 ];
 
 export default projects;
