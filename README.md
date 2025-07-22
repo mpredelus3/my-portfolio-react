@@ -36,7 +36,6 @@ If you have a project in mind or want to collaborate, feel free to reach out to 
 - **Email**: [mpredelus3@gmail.com](mailto:mpredelus3@gmail.com)
 - **LinkedIn**: [linkedin.com/in/mack-predelus](https://www.linkedin.com/in/mack-predelus-1aaa83156)
 - **GitHub**: [github.com/mpredelus3](https://github.com/mpredelus3)
-- **Fiverr**: [fiverr.com/yourfiverrusername](https://www.fiverr.com/yourfiverrusername)
 
 ## Skills
 
