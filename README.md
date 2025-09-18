@@ -51,4 +51,4 @@ If you have a project in mind or want to collaborate, feel free to reach out to 
 
 ## Resume
 
-You can download my resume [here](./assets/Documents/resume.pdf).
+You can download my resume [here](./src/assets/Documents/Mack-Predelus-Resume-2025.pdf).
