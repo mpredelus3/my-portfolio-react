@@ -1,25 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import './ThemeToggle.css'; // Make sure you have a CSS file for styles
+import React, { useEffect, useState } from "react";
+import "./ThemeToggle.css";
 
 function ThemeToggle() {
-  const [darkMode, setDarkMode] = useState(false);
+  const getInitial = () => {
+    const saved = localStorage.getItem("theme");
+    if (saved === "light" || saved === "dark") return saved;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  };
+
+  const [theme, setTheme] = useState(getInitial);
 
   useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-      document.body.classList.remove('light-mode');
-    } else {
-      document.body.classList.add('light-mode');
-      document.body.classList.remove('dark-mode');
-    }
-  }, [darkMode]);
+    document.body.classList.remove("light-mode", "dark-mode");
+    document.body.classList.add(theme === "light" ? "light-mode" : "dark-mode");
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
-    <div className="theme-toggle">
-      <button onClick={() => setDarkMode(!darkMode)} className="toggle-button">
-        {darkMode ? '🌙' : '☀️'}
-      </button>
-    </div>
+    <button
+      className="theme-toggle toggle-button"
+      aria-label="Toggle theme"
+      title="Toggle theme"
+      onClick={() => setTheme((t) => (t === "light" ? "dark" : "light"))}
+    >
+      {theme === "light" ? "🌙" : "☀️"}
+    </button>
   );
 }
 
