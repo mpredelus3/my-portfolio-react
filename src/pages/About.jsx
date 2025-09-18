@@ -5,12 +5,14 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import myPhoto from '../assets/images/photo-of-me.jpg';
 import '../components/About.css'; // Assuming About.css is in the same directory as About.jsx
+import useReveal from '../hooks/useReveal';
 
 function About() {
+  useReveal();
   return (
     <Container className="about-container">
       <h1 className="text-center mb-4">About Me</h1>
-      <Row className="align-items-center">
+      <Row className="align-items-center reveal">
         <Col md={4} className="text-center mb-4">
           <Image 
             src={myPhoto} 
@@ -21,7 +23,7 @@ function About() {
           />
         </Col>
         <Col md={8}>
-          <div className="about-box">
+          <div className="about-box reveal">
             <p>
               Hello! I'm Mack Predelus, a passionate developer with a strong background in coding and a love for creating innovative solutions. 
               I started my journey as a jet engine mechanic in the Air Force, where I developed a keen eye for detail and a problem-solving mindset. 
