@@ -1,0 +1,9 @@
+.theme-toggle.toggle-button {
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(0,0,0,.2);
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--body-color);
+}
+.theme-toggle.toggle-button:hover { opacity: .9; }
+

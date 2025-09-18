@@ -1,0 +1,26 @@
+:root {
+  --text: #e7edf3;
+  --muted: #a8b6c6;
+  --brand: #5836AF;
+  --brand-600: #3e268c;
+
+  --card: rgba(128, 128, 128, 0.8);
+  --radius: 12px;
+  --shadow-1: 0 4px 12px rgba(0,0,0,.2);
+
+  --footer-h: 64px;
+
+  /* set by theme */
+  --bg-image: url('../assets/images/galaxy.jpg');
+  --body-color: #fff;
+}
+
+.light-mode {
+  --bg-image: url('../assets/images/sun.jpg');
+  --body-color: #000;
+}
+
+.dark-mode {
+  --bg-image: url('../assets/images/galaxy.jpg');
+  --body-color: #fff;
+}

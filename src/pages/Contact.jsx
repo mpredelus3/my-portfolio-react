@@ -49,38 +49,33 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate form data before submission
+    // quick validation pass
+    let nextErrors = { ...errors };
     let valid = true;
-    let newErrors = { ...errors };
 
-    Object.keys(formData).forEach((key) => {
-      if (!formData[key]) {
+    Object.entries(formData).forEach(([key, value]) => {
+      if (!value?.trim()) {
+        nextErrors[key] = `${key.charAt(0).toUpperCase() + key.slice(1)} is required` ;
         valid = false;
-        newErrors[key] = `${key.charAt(0).toUpperCase() + key.slice(1)} is required`;
-      } else if (key === 'email' && !validateEmail(formData.email)) {
+      } else if (key === "email" && !validateEmail(value)) {
+        nextErrors.email = "Please enter a valid email address";
         valid = false;
-        newErrors.email = 'Please enter a valid email address';
       }
     });
 
-    if (!valid) {
-      setErrors(newErrors);
-      alert('Please correct the errors before submitting the form.');
-      return;
-    }
+    if (!valid) { setErrors(nextErrors); return; }
 
     // Netlify form handling
-    const form = e.target;
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(form)).toString()
+    const form = e.target; // <form>
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString(),
     })
-    .then(() => alert('Your message has been sent successfully!'))
-    .catch((error) => alert('There was an issue sending your message. Please try again later.'));
+      .then(() => alert("Your message has been sent!"))
+      .catch(() => alert("There was an issue sending your message. Please try again later."));
 
-    // Reset form after submission
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
