@@ -5,7 +5,14 @@ import Button from 'react-bootstrap/Button';
 function ProjectCard({ title, description, image, url }) {
   return (
     <Card className="project-card" style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={image} alt={title} style={{ height: '200px', objectFit: 'cover' }} />
+      <Card.Img
+        variant="top"
+        src={image}
+        alt={`${title} preview`}
+        title={title}
+        loading="lazy"
+        style={{ height: '200px', objectFit: 'cover' }}
+      />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
