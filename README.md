@@ -14,20 +14,20 @@ Hello! I'm Mack Predelus, a passionate Full-Stack Developer with a strong backgr
 
 ## Projects
 
-### 1. [Nest-Cast](https://mpredelus3.github.io/nest-cast/home.html)
-A web application that provides weather updates and locates national parks in the US. Built with React, Node.js, and the OpenWeather API.
+### 1. [Ember Mock-Up](https://mpredelus3.github.io/checkout-page/)
+Ember Mock-Up — A client-requested mock-up of a multi-step customer signup page.
 
-### 2. [Horiseon Project](https://mpredelus3.github.io/horiseon01/)
-My very first project that laid the foundation for my journey into web development.
+### 2. [QR Code Generator](https://github.com/mpredelus3/qr-codeGen)
+QR Code Generator — A QR code generator built using React with Vite and MS SQL Server.
 
-### 3. [Mental Health Adventure](https://mental-health-adventure.onrender.com/)
-A mobile-friendly app built with React, designed to encourage individuals with social anxiety to engage in social activities and explore new environments. This project highlights my ability to work in a team, contributing to a user-focused, responsive application.
+### 3. [Crith Croth](https://crithcroth.netlify.app/)
+Crith Croth — A mobile-friendly Tic-Tac-Toe game made with React.
 
-### 4. [Task List Project](https://mpredelus3.github.io/task-board/)
-A simple and efficient to-do list application that allows users to manage their daily tasks. This project showcases my ability to create functional, easy-to-use applications with React and demonstrates proficiency in managing state and user interactions.
+### 4. [Mental Health Adventure](https://mental-health-adventure.onrender.com/)
+Mental Health Adventure — Trash Panda is resources for mental health that encourages outside activity.
 
-### 5. [Crith Croth](https://crithcroth.netlify.app/)
-A fun and mobile-friendly game of tic-tac-toe. The name stems from saying criss cross but with a lisp! :D
+### 5. [Task Board](https://mpredelus3.github.io/task-board/)
+Task Board — A basic JavaScript made todo list for organization.
 
 ## Contact Me
 
